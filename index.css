@@ -1,0 +1,1199 @@
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+
+/* Document
+   ========================================================================== */
+
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+
+ html {
+    line-height: 1.15; /* 1 */
+    -webkit-text-size-adjust: 100%; /* 2 */
+  }
+
+  
+  body {
+    margin: 0;
+  }
+  
+  
+  main {
+    display: block;
+  }
+  
+  
+  h1 {
+    font-size: 2em;
+    margin: 0.67em 0;
+  }
+  
+  
+  hr {
+    box-sizing: content-box; /* 1 */
+    height: 0; /* 1 */
+    overflow: visible; /* 2 */
+  }
+  
+  
+  pre {
+    font-family: monospace, monospace; /* 1 */
+    font-size: 1em; /* 2 */
+  }
+  
+  
+  a {
+    background-color: transparent;
+  }
+  
+  
+  abbr[title] {
+    border-bottom: none; /* 1 */
+    text-decoration: underline; /* 2 */
+    text-decoration: underline dotted; /* 2 */
+  }
+  
+  
+  b,
+  strong {
+    font-weight: bolder;
+  }
+  
+  code,
+  kbd,
+  samp {
+    font-family: monospace, monospace; /* 1 */
+    font-size: 1em; /* 2 */
+  }
+  
+  small {
+    font-size: 80%;
+  }
+  
+  
+  sub,
+  sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+  }
+  
+  sub {
+    bottom: -0.25em;
+  }
+  
+  sup {
+    top: -0.5em;
+  }
+  
+  
+  img {
+    border-style: none;
+  }
+  
+  
+  button,
+  input,
+  optgroup,
+  select,
+  textarea {
+    font-family: inherit; /* 1 */
+    font-size: 100%; /* 1 */
+    line-height: 1.15; /* 1 */
+    margin: 0; /* 2 */
+  }
+  
+  
+  button,
+  input { /* 1 */
+    overflow: visible;
+  }
+  
+  
+  button,
+  select { /* 1 */
+    text-transform: none;
+  }
+  
+  button::-moz-focus-inner,
+  [type="button"]::-moz-focus-inner,
+  [type="reset"]::-moz-focus-inner,
+  [type="submit"]::-moz-focus-inner {
+    border-style: none;
+    padding: 0;
+  }
+  
+  
+  button:-moz-focusring,
+  [type="button"]:-moz-focusring,
+  [type="reset"]:-moz-focusring,
+  [type="submit"]:-moz-focusring {
+    outline: 1px dotted ButtonText;
+  }
+  
+  fieldset {
+    padding: 0.35em 0.75em 0.625em;
+  }
+  
+  
+  legend {
+    box-sizing: border-box; /* 1 */
+    color: inherit; /* 2 */
+    display: table; /* 1 */
+    max-width: 100%; /* 1 */
+    padding: 0; /* 3 */
+    white-space: normal; /* 1 */
+  }
+  
+  
+  progress {
+    vertical-align: baseline;
+  }
+  
+  textarea {
+    overflow: auto;
+  }
+  
+  
+  [type="checkbox"],
+  [type="radio"] {
+    box-sizing: border-box; /* 1 */
+    padding: 0; /* 2 */
+  }
+  
+  
+  [type="number"]::-webkit-inner-spin-button,
+  [type="number"]::-webkit-outer-spin-button {
+    height: auto;
+  }
+  
+  
+  ::-webkit-file-upload-button {
+    
+    font: inherit; /* 2 */
+  }
+  
+  details {
+    display: block;
+  }
+  
+  summary {
+    display: list-item;
+  }
+  
+  template {
+    display: none;
+  }
+  
+  [hidden] { 
+    display: none;
+  }
+
+/*Encabezado*/  
+header{
+  background-color: #8C0335;
+  padding: 0px 20px 0px 0px;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: end;
+
+}
+
+/*Encabezado logo*/  
+  #encabezado-logo{
+    width: 300px;
+    height: 100px;
+    padding: 30px 0px 10px 20px;
+  }
+
+
+/*Encabezado imagen de usuario*/  
+  #menu-usuario{
+    width: 40px; 
+    height: 40px;
+    padding: 0px 40px 0px 50px;
+  }
+
+
+
+/*Encabezado menu desplegable*/  			
+ul, ol {
+  list-style:none;
+}
+
+.menu > li {
+  float:left;
+}
+
+.menu li a {
+  background-color:#8C0335;
+  font-size: 125%;
+  font-family: "Segoe UI";
+  color:#fff;
+  text-decoration:none;
+  padding:15px 12px;
+  display:block;
+}
+
+.menu li a:hover {
+  background-color:#500c25;
+}
+
+.menu li ul {
+  display:none;
+  position:absolute;
+  min-width:140px;
+  z-index: 3 ;
+}
+
+.menu li:hover > ul {
+  display:block;
+  align-items: center;
+}
+
+.menu li ul li {
+  position:relative;
+  right: 40px;
+  top: 6px;
+  
+}
+/*Encabezado*/  
+
+/*Noticias-Inicio*/  
+.carrusel-noticias{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    scroll-snap-align: center;
+    padding: 30px 0px 0px 0px;
+
+    background: linear-gradient(145deg, #FFFFFF, #C1C3C6);
+    
+
+}
+.card{
+    padding: 2em;
+    margin: 1.3em;
+    border-radius: 2%;
+    width: 20%;
+    background: linear-gradient(145deg, #8C0335, #af144d);
+}
+.card a{
+    color: white;
+    text-decoration: none;
+}
+
+.card p{
+    font-size: 1em;
+    font-family: "Segoe UI";
+    font-weight: 600;
+    margin: 0;
+    padding-bottom: 1em;
+    color: rgb(238, 171, 189);
+}
+
+.card h3{
+    font-size: 1.5em;
+    font-family: "Segoe UI";
+    font-weight: 700;
+    margin: 0;
+    padding-bottom: 1em;
+}
+
+.imagen-noticia{
+    height: 25vh;
+    width: 20vw;
+    object-fit: cover;
+}
+
+.card:hover{
+    background: linear-gradient(145deg, #b4bdd2, #cfeef7);
+    box-shadow: 9.91px 9.91px 16px #b8c0cf, -9.91px -9.91px 16px #e4ecfc;
+    transform: scale(1.05);
+}
+
+.card:hover p{
+    color: rgb(73, 73, 73);
+}
+
+.card:hover h3{
+  color: #000;
+}
+
+/*Noticias-Inicio*/ 
+
+/*Partidos recientes-Inicio*/
+
+.partidos-recientes{
+  text-align: center;
+  width: 100%;
+  background: linear-gradient(145deg, #FFFFFF, #C1C3C6);
+  padding: 30px 0px 0px 0px;
+  font-size: 200%;
+  font-family: 'Segoe UI';
+}
+
+
+.recientes-inicio{
+  padding: 30px 0px 0px 0px;
+  font-size: 200%;
+  color: #8C0335;
+  margin: 0;
+  
+}
+.tiempo-inicio{
+  text-align: right;
+  justify-self: end;
+  margin-right: 150px;
+  font-size: 125%;
+  color: #500c25;
+}
+.enfrentamiento-inicio{
+  display: grid;
+  grid-template-columns: 2fr 1fr 2fr;
+  width: 100%;
+  gap: 5px;
+  
+}
+.equipo-inicio{
+  display: grid;
+  grid-template-rows: 2fr;
+  width: 100%;
+  justify-content: center;
+  color: #500c25;
+  padding-bottom: 20px;
+}
+
+#equipo-inicio-vs{
+  display: flex;
+  align-items: center;
+}
+
+#equipo-inicio-vs p{
+  color: #500c25;
+  font-family: 'Segoe UI';
+  font-size: 210%;
+  width: 100%;
+}
+
+.equipo-inicio h1{
+  font-size: 75px;
+  margin: 0%;
+  color: black;
+  border: solid 3px #8C0335;
+  border-radius: 5%;
+  width: 100%;
+  
+}
+
+.bandera-inicio{
+  height: 15vh;
+  width: 15vw;
+  object-fit: fill;
+  margin: 0px 0px 10px 10px;
+} 
+.info-inicio{
+  width: 100%;
+  font-size: 20px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+  align-items: center;
+    
+}
+.info-inicio-1{
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  margin: 0 auto;
+}
+.info-inicio-2{
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+}
+.info-inicio p{
+  color: black;
+  margin-top: 0px;
+  font-size: 150%;
+  font-family: 'Segoe UI';
+  color: #500c25;
+}
+
+.info-inicio-contenido{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+  align-items: center;
+  padding: 5px 0px 5px 0px;
+  border-bottom: solid 3px #8C0335;
+  margin-bottom: 15px;
+}
+
+.Uniforme-inicio{
+  height: 8vh;
+  width: 5vw;
+  object-fit: fill;
+}
+
+
+/*Partidos recientes-Inicio*/
+
+/*footer*/
+footer{
+  background-color: #8C0335;
+  color: #fff;
+  padding: 0px 20px 0px 20px;
+  
+}
+.footer{
+  display:flex;
+  flex-direction: row;
+  justify-content: space-around;
+  position:relative;
+  left:0px;
+  bottom:0px;
+  
+}
+.footer a{
+  text-decoration: none;
+  color: #fff;
+  font-family: "Segoe UI";
+}
+.footer h2{
+  text-decoration: none;
+  color: #fff;
+  font-family: "Segoe UI";
+}
+.footer-izquierda{
+  width: 33%;
+  float: left;
+}
+.footer-centro{
+  width: 33%;
+  float: left;
+}
+.footer-derecha{
+  width: 33%;
+  float: right;
+}
+/*footer*/
+
+
+/*T_Equipos*/  
+/*Continentes*/ 
+.t_equipos h1{
+  text-align: center;
+  font-size: 50px;
+  font-family: "Segoe UI";
+  padding: 10px;
+}
+
+.Continente{
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+}
+
+.Continente-mapa h2{
+  color: #8C0335;
+  font-size: 40px;
+  font-family: "Segoe UI";
+  text-align: center;
+  padding: 0px 0px 20px 0px;
+}
+
+.Continente-Banderas{
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+}
+
+.Continente-Banderas a{
+  text-decoration: none;
+}
+
+
+#Bandera {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  padding: 5px;
+}
+
+#Bandera img{
+  width: 180px; 
+  height: 130px;
+  border: solid;
+  border-color: #e8e8e8;
+}
+
+#Bandera p{
+  font-size: 125%;
+  font-family: "Segoe UI";
+  text-align: center;
+  }
+/*T_Equipos*/  
+/*Continentes*/ 
+
+
+/*Clasificacion*/
+
+.body-clas{
+  background-image: url("Imagenes/Otros/fondo1.jpg");
+  opacity: 100%; 
+  background-size: cover;
+  object-fit: cover;
+
+}
+.contenedor-principal{
+  position: block;
+  
+  width: 120px;
+  
+  height: 130vh;
+  
+}
+
+  .Ronda16-Izquierda{
+    position: relative;
+
+  }
+
+    #Iarriba{
+      top: 2em;
+      left: 1.3em;
+    }
+    #Iabajo{
+      top: 30em;
+      left: 1.3em;
+    }
+
+  .Ronda16-Derecha{
+    position: relative;
+    
+  }
+
+    #Darriba{
+      top: 2em;
+      left: 70.5em;
+      
+    }
+
+    #Dabajo{
+      top: 30em;
+      left:70.5em;
+      
+    }
+
+.contenedor{
+  text-align: center;
+  border: 0.1em solid #a3053f;
+  width: 8em;
+  padding: 0.2em;
+  border-radius: 0.5em;
+  background-color: #ffffff;
+  z-index: 2;
+}
+
+  .contenedor p{
+    margin: 0.5em 0em 0em 0em;
+    font-size: 90%;
+    font-family: "Segoe UI";
+    color: #a3053f;
+
+  }
+
+  .contenedor h1{
+    margin: 0em;
+    padding: 0em 0em 0.1em 0em;
+    font-size: 1em;
+    text-align: center;
+    font-family: "Segoe UI";
+    color: #a3053f;
+
+  }
+
+  #posicion1{
+    position: absolute;
+    left: 0.3em;
+    top: 1em;
+
+  }
+
+  #Iposicion2{
+    position: absolute;
+    left: 9em;
+    top: 7.1em;
+
+    
+  }
+
+  #Dposicion2{
+    position: absolute;
+    left: -8.5em;
+    top: 7.1em;
+
+    
+  }
+
+  #posicion3{
+    position: absolute;
+    left: 0.3em;
+    top: 13em;
+    
+  }
+
+  #Cposicion1{
+    position: absolute;
+    left: 35.8em;
+    top: 20.1em;
+
+  }
+
+  #Cposicion2{
+    position: absolute;
+    left: 19.8em;
+    top: 32em;
+
+    
+  }
+
+  #Cposicion3{
+    position: absolute;
+    left: 51.9em;
+    top: 32em;
+  }
+
+  #Cposicion4{
+    position: absolute;
+    left: 35.8em;
+    top: 40.2em;
+  }
+
+.tabla{
+  font-size: 50%;
+  font-family: "Segoe UI";
+  color: #a3053f;
+}
+
+  .tabla td{
+    width: 1.5em;
+    height: 0.5em;
+    font-size: 200%;
+    border-radius: 0.5em;
+    border: 0em 0.1em 0em 0.1em;
+  }
+
+  #entrada{
+    border:solid #c60049;
+    color: #c60049;
+    margin: 0.2em 0em 0em 0em;
+  }
+
+  .tabla img{
+    width: 2vw;
+    height: 2.5vh;
+    object-fit: fill;
+  }
+
+#Linea-iqz{
+  position: absolute;
+  border: solid#c60049 ;
+  border-radius: 0.5em;
+  border-width: 0.3em 0.3em 0.3em 0em;
+  width: 5em;
+  height: 11.7em;
+  z-index: 1;
+  top: 2.9em;
+  left: 8.1em;
+}
+
+#Linea-der{
+  position: absolute;
+  border-radius:  0.5em;
+  border: solid#c60049 ;
+  border-width: 0.3em 0em 0.3em 0.3em;
+  width: 5em;
+  height: 11.7em;
+  z-index: 1;
+  top: 2.9em;
+  left: -4.3em;
+}
+
+#Linea-izq-centro{
+  position: absolute;
+  border-radius:  0.5em;
+  border: solid#c60049 ;
+  border-width: 0.3em 0.3em 0.3em 0em;
+  width: 5.5em;
+  height: 27.7em;
+  z-index: 1;
+  top: 20em;
+  left: 18.5em;
+}
+
+#Linea-der-centro{
+  position: absolute;
+  border-radius:  0.5em;
+  border: solid#c60049 ;
+  border-width: 0.3em 0em 0.3em 0.3em;
+  width: 7em;
+  height: 27.7em;
+  z-index: 1;
+  top: 20em;
+  left: 56em;
+}
+
+#Linea-1{
+  position: absolute;
+  border-radius: 0.5em ;
+  border: solid#c60049 ;
+  border-width: 0em  0em  0.3em  0em ;
+  width: 25em;
+  height: 0em;
+  z-index: 1;
+  top: 33.8em;
+  left: 27.8em;
+}
+
+#Linea-2{
+  position: absolute;
+  border-radius: 0.5em ;
+  border: solid#c60049;
+  border-width: 0em  0em  0em  0.3em ;
+  width: 0em;
+  height: 16em;
+  z-index: 1;
+  top: 25em;
+  left: 40em;
+}
+
+#Bandera p{
+  font-size: 125%;
+  font-family: "Segoe UI";
+  text-align: center;
+}
+/*Clasificacion*/
+
+/*Registro y login*/
+.body-registro{
+  background-image: url("Imagenes\\Registro\\fondo.jpg");
+}
+.registro{
+  width: 400px;
+  padding: 30px;
+  margin: auto;
+  margin-top: 100px;
+  border-radius: 4px;
+  font-family: 'calibri';
+  color: rgb(6, 6, 6);
+  background: #EEF0F4;
+  border-radius: 2%;
+  box-shadow: inset 9.91px 9.91px 15px #D9DADE, inset -9.91px -9.91px 15px #FFFFFF;
+}
+.registro h1{
+  font-size: 22px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.registro p{
+  height: 40px;
+  text-align: center;
+  font-size: 18px;
+  line-height: 40px;
+}
+.registro a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+}
+
+.registro a:hover {
+  color: rgb(5, 5, 5);
+  text-decoration: underline;
+}
+.campo-registro{
+  width: 95%;
+  background: #ffffff;
+  padding: 10px 10px 10px 10px;
+  border-radius: 4px;
+  margin-bottom: 16px;
+  border: 1px solid #8C0335;
+  font-family: 'calibri';
+  font-size: 18px;
+  color: rgb(22, 22, 22);
+}
+.registro .boton-registro {
+  width: 100%;
+  background: linear-gradient(145deg, #8C0335, #971e4b);
+  box-shadow: inset 9.91px 9.91px 15px #cf165a, inset -9.91px -9.91px 15px #af3260;
+  border: none;
+  padding: 12px;
+  color: white;
+  margin: 16px 0;
+  font-size: 18px;
+}
+.boton-registro:hover{
+  cursor: pointer;
+}
+/*Registro y login*/
+
+/*Estilos de página de equipos*/
+.barra-pais{
+  width: 50%;
+  font-family: 'Segoe UI';
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 20px;
+  padding: 1em 0em 0em 5%;
+}
+.barra-pais img{
+  width: 80px;
+  height: auto;
+}
+.barra-pais h1{
+  margin: 0px;
+}
+.barra-pais-usuario{
+  width: 50%;
+  font-family: 'Segoe UI';
+  display: grid;
+  grid-template-columns: auto auto 1fr;
+  gap: 20px;
+  padding: 1em 0em 0em 5%;
+}
+.barra-pais-usuario img{
+  width: 80px;
+  height: auto;
+}
+.barra-pais-usuario h1{
+  margin: 0px;
+}
+.boton-favorito-usuario img{
+  width: 40px;
+  height: auto;
+}
+.logros-barra{
+  width: 90%;
+  font-family: 'Segoe UI';
+  margin: 10px auto 10px auto;
+  background-color: #8c0335f1;
+  border-radius: 15px;
+}
+.logros-barra h1{
+  margin: 0px;
+  padding: 5px 15px 5px 15px;
+  color: white;
+}
+.logros-barra p{
+  margin: 0px;
+  padding: 5px 15px 5px 15px;
+  color: white;
+  font-size: 20px;
+}
+.cont-jugadores-equipo{
+  width: 90%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  margin: 30px auto 50px auto;
+  align-content: center;
+  justify-content: center;
+}
+.cuadro-jugador-equipo{
+  height: 100%;
+  width: 100%;
+  font-size: 40px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 10px;
+  border: #8C0335 solid 4px;
+  margin: auto;
+  align-items: center;
+  padding: 5px 0px 4px 0px;
+}
+.cuadro-jugador-equipo img{
+  height: 80px;
+  border-radius: 15px 15px 0px 0px;
+}
+
+.cuadro-jugador-equipo p{
+  font-family: 'Segoe UI';
+  font-size: 20px;
+  margin: 0px;
+  width: 100%;
+  color: black;
+  text-align: center;
+}
+
+/*Estilos de página de equipos*/
+
+/*Registro PHP*/
+.registro-exito{
+  text-align: center;
+  width: 400px;
+  padding: 12px;
+  margin: 3% 0% 0% 35.3%;
+  background-color: white;
+  color:rgb(0, 0, 0);
+}
+.registro-error{
+  text-align: center;
+  width: 400px;
+  padding: 12px;
+  margin: 3% 0% 0% 35.3%;
+  background-color: white;
+  color:rgb(0, 0, 0);
+}
+/*Registro PHP*/
+
+
+/*Resultado-Usuario*/
+
+.formulario_resultados{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+
+.fecha {
+  padding: 10px;
+  font-size: 30px;
+  text-align: center;
+}
+
+.fecha_1{
+  padding:10px;
+}
+
+.seleccionar {
+  padding: 16px 20px;
+  border: none;
+  background-color: #f1f1f1;
+  padding: 10px;
+  text-align: center;
+}
+
+.boton_resultados{
+  padding:10px;
+  border: none;
+  background-color: #f1f1f1;
+  text-align: center;
+  margin-bottom: 2.5%;
+}
+.boton_resultados:hover{
+  cursor: pointer;
+}
+.resultados-h1{
+  text-align: center;
+  font-size: 20px;
+  margin-bottom: 10%;
+}
+/*Resultado-Usuario*/
+
+
+/*Resultado-Administrador*/
+.contenedor_input_admin{
+  width: 450px;
+  padding: 30px;
+  margin: auto;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  border-radius: 4px;
+  font-family: 'calibri';
+  color: rgb(255, 255, 255);
+  background: linear-gradient(145deg, #8C0335, #b80e4c);
+  border-radius: 1%;
+  box-shadow: inset 12.91px 12.91px 8px #8C0335, inset -12.91px -12.91px 8px #af2759;
+}
+.campo-resultado-A{
+  width: 95%;
+  background: #ffffff;
+  padding: 10px 10px 10px 10px;
+  border-radius: 4px;
+  margin-bottom: 16px;
+  border: 1px solid #8C0335;
+  font-family: 'calibri';
+  font-size: 18px;
+  color: rgb(22, 22, 22);
+}
+.boton-resultados-A{
+  width: 100%;
+  background: #eef1f7;
+  box-shadow: inset 12.91px 12.91px 8px #dadce1, inset -12.91px -12.91px 8px #EBF0F9;
+  border: none;
+  padding: 12px;
+  color: rgb(0, 0, 0);
+  margin: 16px 0;
+  font-size: 24px;
+}
+.boton-resultados-A:hover{
+  cursor: pointer;
+}
+
+.resultados-exito{
+  text-align: center;
+  width: 400px;
+  padding: 12px;
+  
+  margin: 3% 0% 5% 34.8%;
+  background-color: #8C0335;
+  color:rgb(255, 255, 255);
+}
+.resultados-error{
+  text-align: center;
+  width: 400px;
+  padding: 12px;
+  margin: 3% 0% 0% 34.8%;
+  background-color: #8C0335;
+  color:rgb(255, 255, 255);
+}
+/*Resultado-Administrador*/
+
+/*Resultado-Usuario*/
+.ficha-cuadro{
+  display: block;
+  font-size: 10px;
+  color: white;
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-top: 5%;
+  margin-bottom: 9.8%;
+  background: linear-gradient(145deg, #8C0335, #b91b55);
+  box-shadow: inset 9.91px 9.91px 15px #b40445, inset -9.91px -9.91px 15px #cd2563;
+  
+}
+.ficha-cuadro h3{
+  text-align: center;
+  font-size: 20px;
+  padding-top: 3%;
+  padding-bottom: 3%;
+
+}
+.ficha-grid{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.ficha-hora{
+  justify-self: end;
+  padding-right: 10%;
+}
+.ficha-estadio{
+  justify-self: center;
+}
+.ficha-fecha{
+  justify-self: center;
+}
+.ficha-grupo{
+  padding-left: 10%;
+}
+.ficha-equipo-1{
+  justify-self: end;
+}
+.ficha-goles{
+  justify-self: center;
+}
+/*Resultado-Usuario*/
+
+
+/*Favoritos*/
+
+.fav-h1{
+  text-align: center;
+  font-size: 20px;
+  margin-bottom: 10%; 
+}
+
+
+
+/*Favoritos*/
+/*Resultado-Administrador*/
+
+
+/*Tabla de posiciones*/
+.div_tablas{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1em;
+  font-family:'Segoe UI';
+}
+
+.Titulo_tabla_posiciones h1{
+  text-align: center;
+  font-size: 4em;
+  margin-bottom: 2.5%;
+  font-family: 'Segoe UI';
+  color: #5c1931;
+}
+
+.Tabla_posiciones{
+  padding: 2em;
+
+}
+  .Tabla_posiciones h1{
+    width:400px;
+    margin:35px auto;
+    text-align:center;
+    color:#8C0335;
+  }
+  .Tabla_posiciones p{
+    width:500px;
+    margin:35px auto;
+    text-align:center;
+    color:#8C0335;
+  }
+  .Tabla_posiciones table{
+    width:100%;
+    margin:0 auto;
+    color:rgb(70, 4, 4);
+    text-align:center;
+  }
+
+  .Tabla_posiciones td{
+    height: 3em;
+  }
+
+  .Tabla_posiciones tr{
+    cursor:pointer;
+  }
+
+  .Tabla_posiciones img{
+    width: 3em;
+    height: 2em;
+    border: 0.1em solid #dec8c82c;
+  }
+  
+  
+  #destacado{
+    font-family: 'Segoe UI';
+    font-weight:bold;
+    background-color:#8C0335;
+    color:rgb(255, 255, 255);
+  }
+
+
+  /* Impares */
+  .Tabla_posiciones table tr:nth-child(odd){
+    background-color:#d1959f;
+  }
+
+  .Tabla_posiciones table tr:nth-child(odd):hover{
+    color:#fff1f1;
+    background-color:#a00b42;
+  }
+  /* Pares */
+  .Tabla_posiciones table tr:nth-child(even){
+    background-color:#fff1f1;
+  }
+
+  .Tabla_posiciones table tr:nth-child(even):hover{
+    color:#fff1f1;
+    background-color:#a00b42;
+  }
